@@ -8,7 +8,12 @@ import SingUp from '../screens/SingUp'
 const Stack = createStackNavigator();
 
 export default () =>(
-    <Stack.Navigator>
+    <Stack.Navigator
+        initialRouteName="Preload"
+        screenOptions={{
+            headerShown: false
+        }}
+    >
         <Stack.Screen name="Preload" component={Preload} />
         <Stack.Screen name="SingIn" component={SingIn} />
         <Stack.Screen name="SingUp" component={SingUp} />
