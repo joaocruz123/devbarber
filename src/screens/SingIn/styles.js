@@ -9,8 +9,10 @@ export const Container = styled.SafeAreaView`
 `;
 
 export const InputArea = styled.View`
+    width: 100%
     padding: 40px;
 `;
+
 export const CustomButtom = styled.TouchableOpacity`
     height: 60px;
     background-color: #268596;
@@ -18,11 +20,27 @@ export const CustomButtom = styled.TouchableOpacity`
     justify-content: center;
     align-items: center;
 `;
+
 export const CustomButtomText = styled.Text`
     font-size: 18px;
     color: #fff;
 `;
 
-export const SingMessageButtom = styled.TouchableOpacity``;
-export const SingMessageButtomText = styled.Text``;
-export const SingMessageButtomTextBold = styled.Text``;
+export const SingMessageButtom = styled.TouchableOpacity`
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+`;
+
+export const SingMessageButtomText = styled.Text`
+    font-size: 16px;
+    color: #268596;
+`;
+
+export const SingMessageButtomTextBold = styled.Text`
+    font-size: 16px;
+    color: #268596;
+    font-weight: bold;
+    margin-left: 5px;
+`;
